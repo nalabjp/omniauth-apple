@@ -56,6 +56,9 @@ describe OmniAuth::Strategies::Apple do
       allow(strategy).to receive(:request) do
         request
       end
+      allow(strategy).to receive(:script_name) do
+        ''
+      end
     end
   end
 
